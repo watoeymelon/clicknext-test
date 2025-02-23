@@ -1,0 +1,110 @@
+<h1>Welcome to Kanban Board!</h1>
+
+
+<div class="container homework-container">
+    <h2 class="homework-title">ระบบบันทึกการบ้าน ที่คุณต้องทำ</h2>
+  
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">เพิ่มการบ้านที่ต้องทำ</h5>
+            <h6 class="card-subtitle mb-2 text-muted">กำหนดสิ่งที่ต้องทำ</h6>
+            <form>
+              <div class="form-group">
+                <label for="taskName">Homework</label>
+                <input type="text" class="form-control" id="taskName" />
+              </div>
+  
+              <div class="form-group">
+                <label for="taskDescription">Details</label>
+                <textarea class="form-control" id="taskDescription" rows="3"></textarea>
+              </div>
+  
+              <div class="form-group">
+                <label for="taskDueDate">Due Date</label>
+                <input type="date" class="form-control" id="taskDueDate" />
+              </div>
+  
+              <div class="form-group">
+                <label for="taskPriority">Status</label>
+                <select class="form-control" id="taskPriority">
+                  <option value="high">🔴 ยังไม่ได้ทำ</option>
+                  <option value="medium">🟡 กำลังทำ</option>
+                  <option value="low">🟢 เสร็จแล้ว</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="addFriend">เพิ่มเพื่อนร่วมทำงาน</label>
+                <div class="input-group">
+                    <input type="email" class="form-control" id="addFriend" placeholder="กรอกอีเมลเพื่อน">
+                    <div class="input-group-append">
+                        <button type="button" class="btn add-friend-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+  
+              <button type="submit" class="btn btn-primary mt-2">เพิ่มงาน</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">การบ้าน</h5>
+            <h6 class="card-subtitle mb-2 text-muted">การบ้านที่ต้องทำ</h6>
+            <div class="row">
+              <div class="col-4">
+                <div class="card border-danger border-2">
+                  <div class="card-body">
+                    <h6 class="card-title">🔴 ยังไม่ได้ทำ</h6>
+                    <ul>
+                      <li><strong>ชื่องาน:</strong> ตัวอย่างงาน</li>
+                      <li><strong>รายละเอียด:</strong> รายละเอียดของงาน</li>
+                      <li><strong>วันที่ต้องเสร็จ:</strong> 01/01/2025</li>
+                      <li><strong>ระดับความสำคัญ:</strong> สูง</li>
+                      <li><strong>สถานะ:</strong> ยังไม่ได้ทำ</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card border-warning border-2">
+                  <div class="card-body">
+                    <h6 class="card-title">🟡 กำลังทำ</h6>
+                    <ul>
+                      <li><strong>ชื่องาน:</strong> ตัวอย่างงาน</li>
+                      <li><strong>รายละเอียด:</strong> รายละเอียดของงาน</li>
+                      <li><strong>วันที่ต้องเสร็จ:</strong> 01/01/2025</li>
+                      <li><strong>ระดับความสำคัญ:</strong> กลาง</li>
+                      <li><strong>สถานะ:</strong> กำลังทำ</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card border-success border-2">
+                  <div class="card-body">
+                    <h6 class="card-title">🟢 เสร็จแล้ว</h6>
+                    <ul>
+                      <li><strong>ชื่องาน:</strong> ตัวอย่างงาน</li>
+                      <li><strong>รายละเอียด:</strong> รายละเอียดของงาน</li>
+                      <li><strong>วันที่ต้องเสร็จ:</strong> 01/01/2025</li>
+                      <li><strong>ระดับความสำคัญ:</strong> ต่ำ</li>
+                      <li><strong>สถานะ:</strong> เสร็จแล้ว</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> 
+  

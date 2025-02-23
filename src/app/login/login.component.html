@@ -1,0 +1,12 @@
+<div class="container-dec">
+    <div class="form-box-dec">
+        <h2>Login</h2>
+        <form (ngSubmit)="onLogin()"> 
+            <input type="email" name="email" placeholder="Email" [(ngModel)]="email" required>
+            <input type="password" name="password" placeholder="Password" [(ngModel)]="password" required>
+            <button type="submit" name="login">Login</button>
+        </form>
+
+        <p *ngIf="message">{{ message }}</p>
+    </div>
+</div>
